@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>8-4번문제(383p)</title>
+  </head>
+  <body>
+      <h3>계산해봅시다</h3>
+      <hr>  <!-- onclick: 클릭으로 코드에 따른 이벤트를 실행 시킬 수 있습니다. --->
+            <!-- innerHTML: HTML 콘텐츠를 동적으로(클릭) 변경 할 수 있습니다. --->
+            <!-- this는 span태그 자신을 말합니다. --->
+            <!-- eval()함수는 인자들을 그대로 계산하여 문자열로 나타냅니다. --->
+      <p>2 + 4 = <span onclick="this.innerHTML=eval(2+4)">답</span></p>
+      <p>2 + 20 + 64 = <span onclick="this.innerHTML=eval(2+20+64)">답</span></p>
+      <p>20/5-8*2 = <span onclick="this.innerHTML=20/5-8*2">답</span></p>
+  </body>
+</html>

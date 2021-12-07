@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>8-9번문제(385p)</title>
+    <script>
+      function order(a) { // order() 함수 작성입니다.
+        var text = prompt("라면을 끓이는 순서를 입력하라"); // var: 지역 변수선언, text라는 변수에 prompt에 따른 입력값을 저장합니다.
+        var line = document.createElement("li"); // createElement는 li태그로 DOM 객체를 생성하여 지역 변수 line에 저장합니다.
+        line.innerHTML = text; // 입력값이 저장된 변수 text를 line에 innerHTML형태로 저장합니다. innerHTML는 Html 형식으로 출력 가능 합니다.
+        a.appendChild(line); // line을 자식노드로 추가합니다. 생성한 <li>태그를 <ol>태그 마지막 자식으로 추가합니다.
+      }
+    </script>
+  </head>
+  <body>
+    <h3>라면을 끓이는 순서</h3>
+    <hr>  <!-- 목록을 만들기 위해 ol, li 태그를 사용합니다. Type="A": 알파벳 순으로 나열합니다. --->
+          <!-- style를 사용하여 ol태그 배경색을 yellowgreen으로 설정합니다. --->
+          <!-- onclick: 클릭으로 코드에 따른 이벤트를 실행 시킬 수 있습니다. --->
+          <!-- order() 함수를 호출합니다. this는 ol태그 자신입니다. --->
+    <ol type="A" style="background-color: yellowgreen;" onclick="order(this)">
+      <li>물을 끓인다.</li>
+    </ol>
+  </body>
+</html>

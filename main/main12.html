@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>6-5번문제(305p)</title>
+  </head>
+  <body>
+    <h3>암호를 입력하라!</h3>
+    <hr>
+    <script>                         // prompt(): 메세지, 디폴트 입력값 함수입니다.
+      var n = prompt("암호를 대라"); // var: 지역 변수선언, n이라는 변수에 prompt에 따른 입력값을 저장합니다.
+      switch (n) {                  // swich: 값에 따라 서로 다른 코드를 실행합니다.
+        case "you":                 // n의 변수에 입력값 "you"이면, "통과" 출력 , 다른 값이 입력값이면, "오류"를 출력합니다.
+        document.write("통과!"); // document는 HTML 문서 객체 자체를 가리킵니다. document.write()로 HTML 콘텐츠를 출력합니다.
+        break;
+        default:
+        document.write("오류");
+      }
+    </script>
+  </body>
+</html>
